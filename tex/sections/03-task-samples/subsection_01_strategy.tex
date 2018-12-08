@@ -2,11 +2,28 @@
 
 Требуется распределить имеющиеся $B$ единиц средств среди n предприятий, доход $g_i(x_i)$ от которых, в зависимости от количества вложенных средств $х_i$, определяется матрицей $(n \times n)$, приведенной в таблице \ref{table:opt:initial:data}, так, чтобы суммарный доход со всех предприятий был бы максимальным.
 
-\begin{tabular}{ c c c c c c c }
-\label{table:opt:initial:data}
-    $x$ \textbackslash $g_i$ & $g_1$ & $g_2$ & \textellipsis & $g_i$ & \textellipsis & $g_n$ \\
+\begin{table}[!ht]
+  \label{table:opt:initial:data}
+  \centering
+  \begin{tabularx}{\linewidth}{
+    |>{\centering}X|
+    >{\centering}X|
+    >{\centering}X|
+    >{\centering}X|
+    >{\centering}X|
+    >{\centering}X|
+    >{\centering}X|
+  }
+	\hline
+	$x$ \textbackslash $g_i$ & $g_1$ & $g_2$ & \textellipsis & $g_i$ & \textellipsis & $g_n$ \\
+	\hline
 	$x_1$ & $g_1(x_1)$ & $g_2(x_1)$ & \textellipsis & $g_i(x_1)$ & \textellipsis & $g_n(x_1)$ \\
+	\hline
 	$x_2$ & $g_1(x_2)$ & $g_2(x_2)$ & \textellipsis & $g_i(x_2)$ & \textellipsis & $g_n(x_2)$ \\
+	\hline
 	$x_2$ & \textellipsis & \textellipsis & \textellipsis & $g_i(x_2)$ & \textellipsis & $g_n(x_2)$ \\
+	\hline
 	$x_n$ & $g_1(x_n)$ & $g_2(x_n)$ & \textellipsis & $g_i(x_n)$ & \textellipsis & $g_n(x_n)$ \\
-\end{tabular}
+	\hline
+  \end{tabularx}
+\end{table}
